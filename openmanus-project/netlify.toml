@@ -1,9 +1,0 @@
-[build]
-  command = "npm run build && sed -i 's|REPLACE_WITH_API_URL|'\"$VITE_API_URL\"'|g' dist/index.html"
-  publish = "dist"
-
-[[redirects]]
-  from = "/*"
-  to = "/index.html"
-  status = 200
-
